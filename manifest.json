@@ -1,0 +1,26 @@
+{
+
+  "description": "Demonstrating toolbar buttons",
+  "manifest_version": 2,
+  "name": "Random.Pass",
+  "version": "0.1",
+ 
+  "browser_action": {
+    "browser_style": true,
+    "default_popup": "src/randompass.html",
+    "default_icon": {
+      "16": "icons/randompass-16.png",
+      "32": "icons/randompass-32.png"
+    }
+  },
+
+  "background": {
+     "scripts": ["src/randompass.js"]
+  },
+
+"permissions": [
+  "*://random.org/*",
+  "webRequest"
+]
+
+}
